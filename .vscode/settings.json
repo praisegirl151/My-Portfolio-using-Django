@@ -1,0 +1,13 @@
+{
+    "liveServer.settings.port": 5501,
+    "emmet.preferences": {
+
+
+    },
+    "emmet.includeLanguages": {
+        "javascripts": "javascriptreact",
+        "tailwindCSS": "tailwind",
+        "python": "python",
+        "django-html": "html"
+    }
+}

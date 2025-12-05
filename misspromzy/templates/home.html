@@ -1,0 +1,73 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Home</title>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <link rel="shortcut icon" href="{%static "img/favicon.ico"%}" type="image/x-icon">
+</head>
+<body>
+
+    <!-- NAVIGATION -->
+    <nav>
+        
+        <img src="{% static 'img/praise.dev logo.jpg' %}" class="logo" alt="Praise.dev logo" style="width: 75px; border-radius: 50%;" > </div>
+        <div class="nav-links">
+            <a href="{% url "home" %}" class="active">Home</a>
+            <a href="{% url "about" %}">About</a>
+            <a href="{% url "services" %}">Services</a>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Building Digital Experiences</h1>
+            <p>I am a creative developer specializing in building modern, responsive, and user-friendly web applications.</p>
+            <a href= tel:"+2347018920195" class="cta-btn">Get In Touch</a>
+        </div>
+        <div class="hero-image">
+            <!-- Placeholder for professional image -->
+            <img src="{% static 'img/my picture for my website.jpg' %}" alt="Profile Profile">
+        </div>
+    </section>
+
+    <!-- HIGHLIGHTS -->
+    <section class="highlights">
+        <h2 class="section-title">Why Work With Me</h2>
+        <div class="highlight-grid">
+            <div class="highlight-card">
+                <i class="fas fa-code"></i>
+                <h3>Clean Code</h3>
+                <p>Writing maintainable, scalable, and efficient code is my priority.</p>
+            </div>
+            <div class="highlight-card">
+                <i class="fas fa-mobile-alt"></i>
+                <h3>Responsive Design</h3>
+                <p>Ensuring your website looks perfect on every device imaginable.</p>
+            </div>
+            <div class="highlight-card">
+                <i class="fas fa-rocket"></i>
+                <h3>Performance</h3>
+                <p>Optimized websites that load fast and rank well on search engines.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="contact">
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/praise-otuka-619602315/"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/praisegirl151"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="https://web.facebook.com/praise.otuka.5/"><i class="fab fa-facebook"></i></a>
+        </div>
+        <p>&copy; 2023 Praise developer. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

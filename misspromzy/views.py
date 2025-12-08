@@ -7,7 +7,7 @@ def home(request):
         "status": "Active",
         "is_staff": True
    }
-    return render(request, 'Index.html', content)
+    return render(request, 'index.html', content)
 def about(request):
     return render(request, 'about.html')
 
